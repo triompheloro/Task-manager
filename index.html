@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskmanager</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1 class="title">Tasks to do</h1>
+        <h2>Manage And Search Your Pending Tasks In Cliks!</h2>
+      </div>
+
+      <form class="search">
+        <input
+          type="text"
+          placeholder="search task"
+          class="searchInput"
+          name="needTasks"
+        />
+        <button type="submit" class="searchbutton">
+          <i class="bi bi-x-octagon"></i>
+        </button>
+      </form>
+
+      <div class="wrap">
+        <ul class="tasks"></ul>
+        <form class="addTask">
+          <input
+            type="text"
+            placeholder="add task"
+            class="addInput"
+            name="newTaskToAdd"
+          />
+          <button type="submit" class="addButton">
+            <i class="bi bi-file-earmark-plus"></i>
+          </button>
+        </form>
+      </div>
+      <form class="clear">
+        <p class="TasksDescription" name="taskCounter">
+          You have 3 pending tasks.
+        </p>
+        <button type="submit" class="clearButton">
+          <i class="bi bi-x-circle"></i>
+        </button>
+      </form>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
